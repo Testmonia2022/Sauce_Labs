@@ -31,7 +31,7 @@ import org.junit.runner.RunWith;
 
 @CucumberOptions(
 		features = { "src/spec/features" }, 
-		plugin = { "pretty","html:target/cucumber-report.html" }, 
+		plugin = { "pretty","html:target/cucumber-report.html","json:target/cucumber-report.json" }, 
 		tags = ("@login_casPassant"), 
 		//glue = {"com/e2etests/automation/step_definitions"},
 		monochrome = true,
